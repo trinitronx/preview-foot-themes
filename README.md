@@ -40,7 +40,7 @@ the following:
 
 1. Create a temp dir
 2. Copy `~/.config/foot/foot.ini` to this temp dir
-3. Modify the `include=` line, including the selected theme 
+3. Modify the `include=` line, including the selected theme
 4. Launch `foot` with this config + run: `preview-terminal-colors.sh`
 5. Wait 300ms & immediately cleanup the temp dir + config
   - This allows for faster theme switching,
