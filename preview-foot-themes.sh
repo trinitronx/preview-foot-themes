@@ -1,4 +1,4 @@
-#!/bin/sh -x
+#!/bin/sh
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 theme_dir=${1:-/usr/share/foot/themes/}
 
@@ -17,6 +17,7 @@ ctrl-i = auto-preview on
 ctrl-o = auto-preview OFF
 ? = help
 EOSHORT
+
 read -r -d '' change_help_text <<EOCHANGEHELP
 Stopped launching previews due to typing query...
 ? = help
