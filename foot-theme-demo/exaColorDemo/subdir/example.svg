@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="520" height="350">
+  <ellipse
+    cx="258" cy="169" rx="250" ry="80"
+    transform="matrix(0.866025,-0.5,0.5,0.866025,-46,152)"
+    style="fill:none;stroke:black;stroke-width:3" />
+</svg>
