@@ -19,7 +19,15 @@ that.
 Usage
 -----
 
-Simply run:
+First, ensure you have included any theme in your `foot.ini` config file.
+For example:
+
+```ini
+[main]
+include=/usr/share/foot/themes/dracula
+```
+
+Then, simply run:
 
 ```shell
 ./preview-foot-themes.sh
