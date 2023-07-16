@@ -51,8 +51,10 @@ the following:
 3. Modify the `include=` line, including the selected theme
 4. Launch `foot` with this config + run: `preview-terminal-colors.sh`
 5. Wait 300ms & immediately cleanup the temp dir + config
-  - This allows for faster theme switching,
-  - Avoids `fzf` killing it prematurely (<500ms timeout), leaving stray tmpfiles
+
+    - This allows for faster theme switching,
+    - Avoids `fzf` killing it prematurely (<500ms timeout), leaving stray tmpfiles
+
 6. Sleep and print timeout to the `fzf` preview pane
 7. Cleanup on exit & all normal trappable signals
 
