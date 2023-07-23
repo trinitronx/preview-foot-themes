@@ -20,11 +20,11 @@ trap cleanup EXIT HUP TSTP QUIT SEGV TERM INT ABRT  # trap all common terminate 
 # Replace the include theme line
 TMP_DIR=$(mktemp -d /tmp/preview-foot-theme.XXXXXXXXXX)
 tmp_foot_ini=$TMP_DIR/foot.ini
-cp ~/.config/foot/foot.ini $tmp_foot_ini
-sed -i -e "s#^include=.*#include=${1}#" $tmp_foot_ini
-sync $tmp_foot_ini
+cp ~/.config/foot/foot.ini "$tmp_foot_ini"
+sed -i -e "s#^include=.*#include=${1}#" "$tmp_foot_ini"
+sync "$tmp_foot_ini"
 
-foot --config $tmp_foot_ini -L $SCRIPT_DIR/preview-terminal-colors.sh $preview_seconds &
+foot --config "$tmp_foot_ini" -L "$SCRIPT_DIR/preview-terminal-colors.sh" $preview_seconds &
 foot_pid=$!
 
 # Wait 300ms for foot to read config, then immediately remove tmpfile
