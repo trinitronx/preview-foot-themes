@@ -12,7 +12,7 @@ cleanup() {
 kill_foot_preview() {
   if [ -n "$foot_pid" ]; then
     echo "Killing $foot_pid due to trap"
-    kill -TERM $foot_pid 1>/dev/null 2>&1
+    kill -TERM "$foot_pid" 1>/dev/null 2>&1
   fi
 }
 trap cleanup EXIT HUP TSTP QUIT SEGV TERM INT ABRT  # trap all common terminate signals
