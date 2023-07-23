@@ -49,7 +49,7 @@ Stopped launching previews due to typing query...
 ? = help
 EOCHANGEHELP
 
-find ${theme_dir} -type f -print0 | \
+find "${theme_dir}" -type f -print0 | \
   fzf --read0 --preview-window right,30%,border-rounded --preview="echo -e '$pane_help_text'" \
     --prompt ' > ' \
     --bind 'load:+change-prompt: > ' \
