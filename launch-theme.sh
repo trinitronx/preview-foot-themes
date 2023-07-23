@@ -1,5 +1,5 @@
 #!/bin/sh
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd )"
 preview_seconds=5
 
 # Cleanup on exit
