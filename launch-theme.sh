@@ -24,7 +24,7 @@ cp ~/.config/foot/foot.ini "$tmp_foot_ini"
 sed -i -e "s#^include=.*#include=${1}#" "$tmp_foot_ini"
 sync "$tmp_foot_ini"
 
-foot --config "$tmp_foot_ini" -L "$SCRIPT_DIR/preview-terminal-colors.sh" $preview_seconds &
+foot --config "$tmp_foot_ini" -L "${SHELL:-sh}" "$SCRIPT_DIR/preview-terminal-colors.sh" $preview_seconds &
 foot_pid=$!
 
 # Wait 300ms for foot to read config, then immediately remove tmpfile
