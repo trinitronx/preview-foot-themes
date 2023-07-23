@@ -19,7 +19,12 @@
 SCRIPT_DIR="$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd )"
 theme_dir=${1:-/usr/share/foot/themes/}
 
-read -r -d '' pane_help_text <<EOHELP
+_nl='
+'
+
+while IFS="$_nl" read -r line; do
+  pane_help_text="${pane_help_text}${line}${_nl}"
+done <<EOHELP
 Press...
   Tab to preview
   ctrl-i to turn on  auto-preview
@@ -27,7 +32,9 @@ Press...
   ctrl-/ to toggle preview pane
 EOHELP
 
-read -r -d '' short_help_text <<EOSHORT
+while IFS="$_nl" read -r line; do
+  short_help_text="${short_help_text}${line}${_nl}"
+done <<EOSHORT
 tab = Preview
 ctrl-/ = Toggle Preview: on,hidden
 ctrl-i = auto-preview on
@@ -35,7 +42,9 @@ ctrl-o = auto-preview OFF
 ? = help
 EOSHORT
 
-read -r -d '' change_help_text <<EOCHANGEHELP
+while IFS="$_nl" read -r line; do
+  change_help_text="${change_help_text}${line}${_nl}"
+done <<EOCHANGEHELP
 Stopped launching previews due to typing query...
 ? = help
 EOCHANGEHELP
