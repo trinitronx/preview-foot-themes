@@ -16,7 +16,7 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd )"
 theme_dir=${1:-/usr/share/foot/themes/}
 
 read -r -d '' pane_help_text <<EOHELP
