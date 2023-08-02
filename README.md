@@ -1,3 +1,24 @@
+<!-- markdownlint-configure-file
+{
+  "MD033": false,
+  "MD047": false,
+  "required-headings": {
+    "headings": [
+      "# Preview Foot Themes",
+      "*",
+      "## Why?",
+      "*",
+      "## Usage",
+      "*",
+      "## How does it work?! 🤔",
+      "*",
+      "## Dependencies",
+      "*"
+    ]
+  }
+}
+-->
+
 Preview Foot Themes
 ===================
 
