@@ -22,6 +22,11 @@
 Preview Foot Themes
 ===================
 
+<div style="width: 100%;">
+<!-- markdownlint-disable-next-line MD013 -->
+  <img src="./assets/images/svg-foreignobject.svg" style="width: 100%;" alt="Click to Sponsor.">
+</div>
+
 A simple way to preview foot themes... without the _edit + restart_ loop 😎
 
 [![Preview Foot Logo](./foot-theme-demo/preview-foot-logo.svg)](./foot-theme-demo/preview-foot-logo.svg)
