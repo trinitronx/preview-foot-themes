@@ -73,6 +73,12 @@ This set of scripts depends on the following extra tools / utilities:
     [JetBrainsMono Nerd Font][4]
   - Zsh is recommended
 - `neofetch`: For previewing the terminal colors + Distro details
+  (default if `$PREVIEW_FOOT_FETCHER` is unset)
+  - Optional fallbacks if `neofetch` is not installed:
+    - `fastfetch`
+    - `macchina`
+    - `screenfetch`
+  - If no fetcher program found, it just prints 16 ANSI colors to preview.
 
 ... and of course: **`foot`!**
 
