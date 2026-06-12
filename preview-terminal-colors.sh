@@ -4,7 +4,7 @@ FETCHER=${PREVIEW_FOOT_FETCHER:-neofetch}
 
 print_16_colors() {
     INDENT="${1:-0}"
-    for j in $(seq 1 "$INDENT"); do
+    for _ in $(seq 1 "$INDENT"); do
       printf " "
     done
     for i in $(seq 0 15); do
@@ -13,7 +13,7 @@ print_16_colors() {
         # New line every 8 colors
         if [ "$(((i + 1) % 8))" -eq 0 ]; then
             echo ""
-            for j in $(seq 1 "$INDENT"); do
+            for _ in $(seq 1 "$INDENT"); do
               printf " "
             done
         fi
